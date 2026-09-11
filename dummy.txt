@@ -1,4 +1,0 @@
-This is a dummy test file created next to bell.qc.
-Date: 2026-09-11
-Branch: satya_2qubit_learn
-Purpose: Remote push verification
