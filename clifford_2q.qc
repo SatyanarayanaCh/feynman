@@ -5,7 +5,7 @@
 
 BEGIN
 H q0
-tof q0 q1
+cnot q0 q1
 X q1
 Z q0
 END

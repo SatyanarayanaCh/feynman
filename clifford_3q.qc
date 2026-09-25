@@ -5,8 +5,8 @@
 
 BEGIN
 H q0
-tof q0 q1
-tof q1 q2
+cnot q0 q1
+cnot q1 q2
 X q2
 cz q0 q1
 END
