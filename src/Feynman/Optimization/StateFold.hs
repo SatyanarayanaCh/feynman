@@ -456,7 +456,7 @@ applyStmt d stmt = case stmt of
   WGate l gate -> applyGate False (gate, l) >> return []
   WSeq _ xs    -> liftM concat $ mapM (applyStmt d) xs
   WReset _ v   -> getSt v >>= \bv -> setSt v 0 >> return []
-  WMeasure _ v -> getSt v >> allocTemp >>= \i -> setSt v (ofVar i) >> return []
+  WMeasure _ v -> getSt v >> return []
   WIf _ s1 s2  -> do
     ctx <- get
     let vars  = Map.keys $ ket ctx
